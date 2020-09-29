@@ -1,12 +1,13 @@
 #pragma once
 #define N 3
-struct queue //очередь
+struct queue //РѕС‡РµСЂРµРґСЊ
 {
 	char que[N];
 	int quefirst, quelast;
 };
-void init_que(struct queue* q); //инициализация очереди
-void push(struct queue* q, char x); //вставка в очередь элемента
-int is_empty(struct queue* q); //проверка очереди
-void print(struct queue* q); //вывод элементов
-int pop(struct queue* q);//удаление элементов
+void init_que(struct queue* q); //РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РѕС‡РµСЂРµРґРё
+int push(struct queue* q, char x); //РІСЃС‚Р°РІРєР° РІ РѕС‡РµСЂРµРґСЊ СЌР»РµРјРµРЅС‚Р°
+int is_empty(struct queue* q); //РїСЂРѕРІРµСЂРєР° РѕС‡РµСЂРµРґРё
+int print(struct queue* q); //РІС‹РІРѕРґ СЌР»РµРјРµРЅС‚РѕРІ
+int pop(struct queue* q);//СѓРґР°Р»РµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ
+char check(struct queue* q);//РїСЂРѕРІРµСЂСЏРµС‚ РЅР° РїСЂРѕР±РµР»С‹ Рё СЌРЅС‚РµСЂС‹ Рё РІРІРѕРґРёС‚ РёС… РІ РјР°СЃСЃРёРІ РѕС‡РµСЂРµРґРё
