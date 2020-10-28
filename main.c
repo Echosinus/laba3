@@ -10,14 +10,13 @@ void main()
 	struct queue* q;
 	q = malloc(sizeof(struct queue));
 	init_que(q);
-	printf("enetry element's queue\n");
 	check(q);
 	print(q);
-	while (q->quefirst != N + 1)
+	for (int i = 0; i < 3; i++)
 	{
-			pop(q);
-			printf("delet element %c\n");
-			print(q);
+		pop(q);
+		printf("delet element %c\n");
+		print(q);
 	}
 	system("pause");
 	free(q);
